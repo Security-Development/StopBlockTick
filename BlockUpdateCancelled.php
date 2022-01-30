@@ -5,7 +5,6 @@
  * @main Neo\BlockUpdateCancelled
  * @version 0.1.0
  * @api 4.0.6
- * @depend CustomItemAPI
  */
 
  namespace Neo;

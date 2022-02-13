@@ -26,10 +26,10 @@ class BlockUpdateCancelled extends PluginBase {
         $data = yaml_parse_file($path);
 
         foreach(self::ID as $id) {
-            if( isset($data['chunk-ticking']['disable-block-ticking'][$id]) )
+            if( isset($data['chunk-ticking']['disable-block-ticking'][(int)$id]) )
                 return;
 
-            $data['chunk-ticking']['disable-block-ticking'][] = $id;
+            $data['chunk-ticking']['disable-block-ticking'][] = (int)$id;
         }
 
 
